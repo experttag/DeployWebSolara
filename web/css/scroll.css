@@ -1,0 +1,67 @@
+div.scrollholder
+{
+    position: relative;
+    width: 300px; 
+	height: 200px;
+    overflow: auto;
+    z-index: 1;
+    background-color: white;
+}
+
+div.scroll
+{
+    position: absolute;
+    left: 0; top: 0;
+    width: 95%;
+    z-index: 2;
+}
+
+/* <Scroll> */
+div.track
+{
+    position: relative;
+    float:right;
+    top: 0; 
+    width: 10px; 
+	height: 100%;
+    font-size: 0;    
+	z-index:3;
+	/*background-color:#FDBB2E;    */
+	background-image:url(../images/Scroll_track.png);
+	background-repeat:no-repeat;
+}
+
+div.drag_bar
+{
+    position: absolute;
+    width: 10px; 
+	height: 10px;
+    cursor: pointer;    
+	z-index:4;
+    /*background: #460A06;*/
+	background-image:url(../images/Scroll_knob.png);
+	background-repeat:no-repeat;
+}  
+
+
+
+code
+{
+    display: block;
+    background: #fbffcc;
+    white-space: pre;
+}
+
+
+
+#operaBug
+{
+    overflow: hidden;
+}
+
+.revert
+{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: left;
+}

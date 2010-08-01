@@ -11,29 +11,32 @@ body {
 
 #content{
     width: 1030px;
-	height:700px;	
+	height:670px;	
+	margin: 14 0 0 0;
 	background-color:white;
-	background-image:url(images/Frame.JPG)
+	background-image:url(../images/Frame.png);
+	background-repeat:no-repeat;
 }
 
 .Container {
-	height: 474px;
-	width: 100%;
-	margin: 0px;
+	height: 442px;
+	_height: 440px;
+	width: 1002;
 	padding: 0px;
 	background-color: white;
 	color: black;
 	overflow: auto;
+	/*border:.1em solid yellow;*/
 	
 }
 
 
 #banner {
 	height: 172px;
-	width: 1030px;
+	width: 1002px;
 	margin: 0px;
 	padding: 0px;
-	background-color:#0099FF;   /*#781206;*/
+	background-color:white;   /*#781206;*/
 	color: black;
 	overflow: auto;
 	text-align: left;
@@ -41,8 +44,9 @@ body {
 }
 
 #footer {
-	height: 54px;
-	width: 1030;
+	height: 50px;
+	_height: 54px;
+	width: 1002;
 	margin: 0px;
 	padding: 0px;
 	background-color:#781206;
@@ -85,8 +89,8 @@ body {
 #logo{        
     padding-right:0em;    
 	float:left;
-	margin:45 0 0 40;
-	_margin:45 0 0 20;
+	margin:35 0 0 35;
+	_margin:35 0 0 20;
 
 }
 
@@ -101,83 +105,134 @@ body {
 
 
 #middletext{
-	margin-top:120px;	
+	margin-top:130px;	
 }
 
 
-#aboutus{
-	margin:40 0 10 -163;	
-    _padding-top:10;
-	width:300px;
+#aboutus , #services_home, #client_home{
+	margin:10 0 10 45;
+	_margin:20 0 10 25;	   
+	width:290px;
 	text-align:left;	
 	float:left;	
 }
 
 
-#news{
-	 margin:40 40 10 0;
-	_padding-top:10;
-	width:300px;
-	text-align:left;	
-	float:right;
+#news , #client_list , #services_list{
 
+    margin:10 10 0 30;		
+	width:310px;
+	text-align:left;	
+	float:left;
 }
 
-#testimonial{
-   
-   margin:20 40 10 0;
-   _margin:0 22 10 0;	
-	width:592px;
+#testimonial{   
+   margin:0 55 0 0;
+   _margin:0 26 0 0;	
+	width:582px;
 	text-align:left;
    	float:right;
 	
 }
 
 
-#aboutus_home{
-   
-    margin:20 0 10 -163;	   
-	width:650px;
+
+#privacy_home , #aboutus_home , #contactus_home{
+    margin:7 0 10 45;	
+	_margin:10 0 10 25;	   
+	width:640px;
 	text-align:left;
    	float:left;
 	
 }
 
-#services_home{
-   
-    margin:40 0 10 -163;	   
-	width:300px;
-	text-align:left;
-   	float:left;
-	
-}
-
-#services_list{
-	 margin:40 40 10 0;
-	_padding-top:10;
-	width:300px;
-	text-align:left;	
-	float:right;
-
-}
 
 
-#news p, #aboutus p , #testimonial p , #aboutus p , #services_home p{
+#news p, #aboutus p , #testimonial p , #aboutus p , #services_home p , #client_home p , #privacy_home div div p, #aboutus_home p {
 	font-size:0.8em;
 	color:#630c02; 
 	letter-spacing:1px;
 	font:Helvetica,Arial, sans-serif;
 	margin:8 0 5 0;
+	text-align:justify;
+
+}
+
+.servicelist li a , .servicelist div ul li, .servicelist div ul li ul li , .clientlist li {
+	font-size:0.8em;
+	color:#630c02; 
+	letter-spacing:1px;
+	font:Helvetica,Arial, sans-serif;
+	margin:0 0 7 0;
+	vertical-align:top;
 	
-
-}
-
-#news h2, #aboutus h2 {
-  font-size:1.2em;color:#f47b20;letter-spacing:2px
-}
-
-#news h3 {
-  font-size:1.2em;color:#FDBB30;letter-spacing:2px
 }
 
 
+
+
+
+.servicelist li a:link, .servicelist li a:visited { color: black; text-decoration: none;}
+.servicelist li a:active, .servicelist li a:hover { color: orange; text-decoration: none; font-weight:bold; }
+
+
+#news h2, #aboutus h2 , #privacy_home h2 ,#services_home h2 ,#client_home h2, #contactus_home h2,#aboutus_home h2 , #testimonial h2{
+
+  font-size:.9em;
+  color:#f47b20;
+  letter-spacing:2px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#news h3, #aboutus h3 , #privacy_home h3 ,#services_home h3 ,#client_home h3 , #contactus_home h3,#aboutus_home h3{
+  font-size:.7em;
+  color:#f47b20;
+  letter-spacing:1.5px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#contact_left {
+	width:290px;		
+	float:left
+}
+
+
+#contact_right {
+	width:270px;			
+	float:left;	
+	margin-left:20;
+	margin-top:-40;
+	
+}
+
+#contact_left table tr td ,#contact_right table tr td{
+	font-size:0.8em;
+	color:#f47b20; 
+	letter-spacing:1px;
+	font:Helvetica,Arial, sans-serif;
+	margin:0 0 3 0;
+}
+
+.inputtext{
+   height:1.3em;
+   margin:2 0 2 0;
+
+}
+
+.contact_submit_img{	
+	border-style:none;
+	cursor:pointer;
+}
+
+
+.homelink{          
+  margin-right:10px;  
+  margin-top:115px; 
+  float:right;
+}
+
+
+.homelink a img{
+	border-style:none;	
+}
